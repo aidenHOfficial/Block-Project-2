@@ -2,18 +2,15 @@ def encrypt(text, shift):
     result = ""
     
     for char in text:
-        if char.isalpha():
+        char_shift = shift % 26
 
-            char_shift = shift % 26
+        new_char = chr(((ord(char.lower()) - ord('a') + char_shift) % 26) + ord('a'))
+        
+        if (char.isupper()):
+            result += new_char.upper()
 
-            new_char = chr(((ord(char.lower()) - ord('a') + char_shift) % 26) + ord('a'))
-            
-            if (char.isupper()):
-                result += new_char.upper()
-            else:
-                result += new_char
         else:
-            result += char
+            result += new_char
     
     return result
 

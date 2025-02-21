@@ -1,2 +1,2 @@
 # Block-Project-2
-A simple encryption method
+This program runs an encryption method that encrypts your given string input using a ceasar cypher. The program only requires python in order to run This type of encryption is very primative and is for educational / demonstrational purposes only. In the case someone actually uses this to encrypt something it would be very easy to decypher, and read. Be very careful when using this, because the security for this type of encryption is not very secure
